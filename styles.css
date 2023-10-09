@@ -32,9 +32,9 @@
     font-size: 2.2rem;
   }
 
-  .bg-carousel-ba1 { background-image: url(/img/ba1.jpg); }
-.bg-carousel-ba2 { background-image: url(/img/ba2.jpg); }
-.bg-carousel-ba3 { background-image: url(/img/ba3.jpg); }
+  .bg-carousel-ba1 { background-image: url('img/ba1.jpg'); }
+  .bg-carousel-ba2 { background-image: url('img/ba2.jpg'); }
+  .bg-carousel-ba3 { background-image: url('img/ba3.jpg'); }
 
 .carousel-item {
   background-size: cover;
