@@ -1,88 +1,150 @@
-/* Estilo para el cuerpo de la página */
+ /*Estilo para el cuerpo de la página */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-}
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0; /* Añade un padding de 0 para asegurarte de que no haya relleno adicional */
 
-/* Estilo para el encabezado del formulario */
-h1 {
+}
+#contenedor {
+    display: flex;
+    align-items: center;  
+  
+  }
+
+.caja {
+    width: 200px;
+    height: 180px;
+    border: 1px solid;
     text-align: center;
-    margin-top: 20px;
-    color: #333;
-}
+    padding: 5px;
+    margin: 5px;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 60px;
 
-/* Estilo para el formulario */
-form {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
-/* Estilo para las etiquetas de los campos */
-label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333;
+  }
+
+  .caja strong {
+    font-weight: bold; /* Aplica negrita a los elementos strong */
+  }
+
+  #caja1 {
+    border-color: blue;
+  }
+ 
+
+  #caja2 {
+    border-color: green;
+  }
+
+  #caja3 {
+    border-color: orange;
+  }
+
+  .titulo {
+    text-align: center;
     font-weight: bold;
-}
+    margin-top: 0px; /* Ajusta la distancia hacia arriba según tus necesidades */
+    font-family: 'Courier New', Courier, monospace
+  }
+  
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+    
+    .nombre-apellido {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
 
-/* Estilo para los campos de entrada */
-input[type="text"],
-input[type="email"],
-input[type="number"],
-input[type="text"],
-input[type="date"],
-input[type="month"],
-input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-/* Estilo para los campos de tarjeta de crédito y CVV */
-input[type="text"][id="tarjeta"],
-input[type="text"][id="cvv"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    font-family: "Courier New", monospace;
-}
-
-/* Estilo para el botón de envío */
-.submit-button {
-    text-align: center;
-}
-
-input[type="submit"] {
-    background-color: #25a342;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
+  .campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  .campo label {
+    display: none;
+  }
+  
+  .campo-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* Estilo para el botón "Borrar" */
+#borrar {
+    background-color: rgb(153, 11, 11); /* Cambia el color de fondo */
+    color: #fff; /* Cambia el color del texto */
+    padding: 10px 60px; /* Ajusta el espaciado interior */
+    border: none; /* Quita el borde */
+    border-radius: 5px; /* Agrega bordes redondeados */
     cursor: pointer;
-    font-weight: bold;
-}
+  }
+  
+  #borrar:hover {
+    background-color: #FF0000; /* Cambia el color de fondo al pasar el mouse */
+  }
+  
+  /* Estilo para el botón "Resumen" */
+  #resumen {
+    background-color: #187529; /* Cambia el color de fondo */
+    color: #fff; /* Cambia el color del texto */
+    padding: 10px 60px; /* Ajusta el espaciado interior */
+    border: none; /* Quita el borde */
+    border-radius: 5px; /* Agrega bordes redondeados */
+    cursor: pointer;
+  }
+  
+  #resumen:hover {
+    background-color: #00FF33; /* Cambia el color de fondo al pasar el mouse */
+  }
+ 
+  
+  .botones {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  /* Estilo para el campo "Total a pagar $" */
+.campo #total {
+    background-color: #ADD8E6; /* Color celeste claro */
+    color: #000; /* Color del texto */
+    border: none; /* Quita el borde */
+    padding: 5px; /* Ajusta el espaciado interior */
+    border-radius: 5px; /* Agrega bordes redondeados */
+    cursor: not-allowed; /* Cambia el cursor para indicar que no es editable */
+  }
 
-input[type="submit"]:hover {
-    background-color: #1e8634;
-}
-
-/* Estilo para los mensajes de error si es necesario */
-.error-message {
-    color: #42c06c;
-    font-size: 12px;
-}
-
-/* Estilo para los campos requeridos */
-input:required {
-    border-color: #42c06c;
-}
+#main-footer {
+    background: #1d3c4e;
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+    width: 100%; /* Extiende el pie de página al 100% del ancho de la página */
+   
+  }
+  
+  #main-footer .nav-link {
+    color: #fff;
+    text-align: center;
+  }
+  #main-footer .nav-link:hover { opacity: .7; }
+  
+  @media (min-width: 992px) {
+    #main-footer .nav-link span { 
+    display: block;
+    }
+  }
